@@ -1,0 +1,23 @@
+=== TODO:
+README
+Add some unit tests.
+Learn to use Remix to connect to Ropsten testnet, for debugging the solidity contract code.
+github ssh-based auth.
+Try to run provableAPI in local ganache so can do real test locally?
+
+
+=== Contract Improvements:
+
+
+=== Web frontend improvements:
+- keep record of bets, showing in table.
+columns: query id, bet status (submitting, submitted, resolved), stake and payout.
+- currently it is only for player.
+later also support owner mode, for owner to deposit to the contract and withdraw from the contract.
+
+
+=== Contract address history on Ropsten:
+0x97304C0F892cA7089eBBB1a419a2b34bC54BF867
+0x480cE8796ed5956833cdcE7DB19c1972f49680De
+0x189AAA10b20b4ea4fb1391666fC75975Ff48CF15
+0x54cfdF5e860232d0613923a9b280d1A78E699278

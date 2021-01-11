@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Coin Flip</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.1/web3.min.js" integrity="sha512-96ZCo0pzD4x2MuBZCB4ipirFKs/X/xB2diGU/A7zpfaltISM309KN79pyWe4l9IdtOlzitRltfVcxgdTEbcnvQ==" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="./web3.min.js"></script> -->
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Coin Flip</h1>
+        <p class="lead">Fair play! You will only lose the gas!</p>
+        <p>(v2: using oracle to get random number)</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div>
+        <span>Stake in ether:</span>
+        <input type="number" class="form-control" id="stake_input" placeholder="stake in ether" >
+        <button type="button" id="play_button" class="btn btn-primary">
+          PLAY!
+        </button>
+      </div>
+      <div>
+        Your wallet balance: <span id="player_balance"></span> ether
+      </div>
+      <div>
+        Contract balance: <span id="contract_balance"></span> ether
+      </div>
+      <div>
+        Contract owner: <span id="contract_owner"></span>
+      </div>
+      <button type="button" id="get_data_button" class="btn btn-info">
+        Get Data
+      </button>
+
+    </div>
+
+
+  </body>
+</html>
